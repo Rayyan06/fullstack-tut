@@ -5,8 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "watch": "tsc -w",
-    "dev": "nodemon dist/index.js",
-    "start": "nodemon dist/index.js",
+    "dev": "nodemon dist/index.js --enable-source-maps",
+    "start": "node dist/index.js",
     "start2": "ts-node src/index.ts",
     "dev2": "nodemon --exec ts-node src/index.ts"
   },
