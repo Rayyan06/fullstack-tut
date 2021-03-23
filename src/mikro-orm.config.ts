@@ -12,12 +12,11 @@ const config: Options = {
   },
 
   entities: [Post, User],
-  dbName: "ltmqakby",
+  dbName: "ljitraaz",
   type: "postgresql",
   debug: !__prod__,
   clientUrl:
-    "postgres://ltmqakby:z2kOl2za4nq0prvDDn-FZBNsLAorkDxL@queenie.db.elephantsql.com:5432/ltmqakby",
-
+  "postgres://ljitraaz:pIoBwhe171X8sf-43ygWCuc2MH6serfg@queenie.db.elephantsql.com:5432/ljitraaz"
 }
 
 export default config

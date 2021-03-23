@@ -1,3 +1,4 @@
+/*
 {
   "name": "backend-fun",
   "version": "1.0.0",
@@ -5,14 +6,14 @@
   "main": "src/index.ts",
   "scripts": {
     "watch": "tsc -w",
-    "start": "nodemon --exec ts-node src/index.ts",
+    "dev": "nodemon dist/index.js --enable-source-maps",
+    "start": "node dist/index.js",
     "start2": "ts-node src/index.ts",
     "dev2": "nodemon --exec ts-node src/index.ts",
-
-    "devJS": "nodemon dist/index.js --enable-source-maps",
     "create:migration": "mikro-orm migration:create"
   },
   "dependencies": {
+    "@mikro-orm/cli": "^4.5.4",
     "@mikro-orm/core": "^4.4.4",
     "@mikro-orm/migrations": "^4.4.4",
     "@mikro-orm/postgresql": "^4.4.4",
@@ -40,7 +41,11 @@
   },
   "mikro-orm": {
     "useTsNode": true,
-    "configPaths": ["./src/mikro-orm.config.ts", "./dist/mikro-orm.config.js"]
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
   },
   "keywords": []
 }
+*/
